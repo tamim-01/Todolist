@@ -1,6 +1,6 @@
 # Todo List Application (Full Stack)
 
-**Authors**: This project was created by **Tamim Yousefi** and **Sepehr Sharafi**. You can find both the frontend and backend in my repositories.
+**Authors**: This project was created by **Tamim Yousefi** and **Sepehr Sharafi**.
 
 ---
 
