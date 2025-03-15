@@ -43,14 +43,10 @@ The backend uses the **Neon tech PostgreSQL database**. Configuration details ca
 
 ## **Installation**
 
-### **1. Clone the Repositories**
-Clone both the backend and frontend repositories:
+### **1. Clone the Repositorie**
+
 
 ```bash
 # Clone the backend repository
-git clone https://github.com/tamim-01/Todo-BackEnd
-cd Todo-BackEnd
-
-# Clone the frontend repository
-git clone https://github.com/tamim-01/Todo-FrontEnd
-cd Todo-FrontEnd
+git clone https://github.com/tamim-01/Todolist
+cd Todolist
