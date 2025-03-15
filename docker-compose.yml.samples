@@ -1,0 +1,36 @@
+services:
+  backend:
+    build:
+      context: ./Todo-BackEnd
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - MY_PORT=3000
+      - PGHOST=ep-
+      - PGDATABASE=
+      - PGUSER=
+      - PGPASSWORD=
+      - PGPORT=
+      - ENDPOINT_ID=
+      - PGSSL=true
+      - BCRYPT_ROUNDS=
+      - SIGN_KEY=
+    volumes:
+      - ./Todo-BackEnd:/app
+
+  frontend:
+    build:
+      context: ./Todo-FrontEnd
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    depends_on:
+      - backend
+    volumes:
+      - ./Todo-FrontEnd:/app
+      - /app/node_modules
+
+networks:
+  default:
+    driver: bridge
